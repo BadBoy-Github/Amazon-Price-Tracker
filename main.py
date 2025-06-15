@@ -99,7 +99,7 @@ if __name__ == "__main__":
     
     if price is not None:
         print(f"✅ Current Price: ₹{price}")
-        print(f"Target Price: ₹{target}")
+        print(f"✅ Target Price: ₹{target}")
         
         if price < target:
             print("🚨 Price dropped below target!")
