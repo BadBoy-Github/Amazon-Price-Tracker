@@ -1,3 +1,4 @@
+
 from bs4 import BeautifulSoup
 import requests
 import time
@@ -5,6 +6,7 @@ import random
 from dotenv import load_dotenv
 import os
 import smtplib
+import pyfiglet
 
 # Configuration
 URL = "https://www.amazon.in/dp/B0CS6FPH6P"
@@ -35,6 +37,8 @@ headers = {
     "Cache-Control": "max-age=0",
     "TE": "trailers"
 }
+
+print(pyfiglet.figlet_format("\n-- Amazon Price Tracker --\n\n"))
 
 def get_price():
     try:
